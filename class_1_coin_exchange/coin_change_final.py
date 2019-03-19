@@ -29,7 +29,7 @@ def brute_force_change_helper(coinList, value):
            
     return (finalCoins, coinSum)
 
-coins = [20, 25, 20, 10, 5, 1]
+coins = [25, 20, 15, 10, 5, 1]
 
 for count in range(1, 100):
     b_g_result = better_greedy_change(count, coins)
