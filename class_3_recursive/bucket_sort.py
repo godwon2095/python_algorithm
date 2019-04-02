@@ -19,9 +19,9 @@ def BucketSort(num_list):
             buckets[j].append(num_list[i])
  
     for i in range(length):
-        quick_sort(buckets[i])
+        quickSort(buckets[i])
         ## or
-        # insertion_sort(buckets[i]) 
+        # insertionSort(buckets[i]) 
  
     result = []
     for i in range(length):
@@ -29,7 +29,7 @@ def BucketSort(num_list):
  
     return result
  
-def insertion_sort(num_list):
+def insertionSort(num_list):
     for i in range(1, len(num_list)):
         temp = num_list[i]
         j = i - 1
@@ -39,7 +39,7 @@ def insertion_sort(num_list):
         num_list[j + 1] = temp
 
 
-def quick_sort(num_list):
+def quickSort(num_list):
     length = len(num_list)
     if length <= 1:
         return num_list
@@ -47,7 +47,7 @@ def quick_sort(num_list):
         pivot = num_list[0]
         grator = [ element for element in num_list[1:] if element > pivot ]
         lessor = [ element for element in num_list[1:] if element <= pivot ]
-        return quick_sort(lessor) + [pivot] + quick_sort(grator)
+        return quickSort(lessor) + [pivot] + quickSort(grator)
  
 
 num_list =  [9.9, 1.0, 5.5, 5.7, 3.4, 1.2, 8.3, 1.0, 0.0]

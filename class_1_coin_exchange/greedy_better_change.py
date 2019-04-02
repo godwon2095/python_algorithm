@@ -1,3 +1,4 @@
+# 수학과 2015110417 장성원
 # -*- coding: utf-8 -*-
 def better_greedy_change(M, coins):
     results = []

@@ -6,7 +6,8 @@ def Swap(num_list, index):
     num_list[index], num_list[index - 1] = num_list[index - 1], num_list[index]
 
 
-def BubbleSort(num_list, length):
+def BubbleSort(num_list):
+    length = len(num_list)
     while length != 1:
         for index, num in enumerate(num_list[:length]):
             if index - 1 >= 0 and num_list[index - 1] > num:
@@ -17,5 +18,4 @@ def BubbleSort(num_list, length):
 
 
 num_list = [30, 20, 40, 10, 5, 10, 30, 15]
-length = len(num_list)
-BubbleSort(num_list, length)
+BubbleSort(num_list)

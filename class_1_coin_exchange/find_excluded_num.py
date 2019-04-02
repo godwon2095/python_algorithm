@@ -1,3 +1,4 @@
+# 수학과 2015110417 장성원
 # -*- coding: utf-8 -*-
 num_list_str = input('정수 리스트를 입력해주세요:').split(',')
 max_N = 20
