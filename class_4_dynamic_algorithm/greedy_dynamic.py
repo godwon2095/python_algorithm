@@ -1,5 +1,6 @@
 # 수학과 2015110417 장성원
 # -*- coding: utf-8 -*-
+# 감점 당함 ㅠㅠ
 import pdb
 
 def greedyDP(coin_list, M, known_results):
